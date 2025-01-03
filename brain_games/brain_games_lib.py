@@ -8,6 +8,12 @@ def start():
     return name
 
 
+def lose_text(answer, corrected, name):
+    print(f"'{answer}' is wrong answer ;(. "
+          f"Correct answer was '{corrected}'.")
+    print(f"Let's try again, {name}!")
+
+
 def main():
     start()
 
