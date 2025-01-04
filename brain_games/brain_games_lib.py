@@ -1,26 +1,23 @@
 import prompt
 
 
-def start():    
+def start(game):    
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
-    return name
-
-
-def lose_text(answer, corrected, name):
-    print(f"'{answer}' is wrong answer ;(. "
-          f"Correct answer was '{corrected}'.")
-    print(f"Let's try again, {name}!")
-
-
-def get_answer(question):
-    return prompt.string(f'Question: {question}\nYour answer: ')
-     
-
-def main():
-    start()
+    print(game.DESCRIPTION)
+    for i in range(0, 3):
+        (question, correct) = game.create()
+        answer = prompt.string(f'Question: {question}\nYour answer: ')
+        if answer.lower() == correct:
+            print("Correct!")
+        else:
+            print(f"'{answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct}'.")
+            print(f"Let's try again, {name}!")
+            return
+    print(f"Congratulations, {name}!")  
 
 
 if __name__ == "__main__":
-	main()
+	start()
