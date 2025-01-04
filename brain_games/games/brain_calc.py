@@ -1,10 +1,10 @@
 import sys
 
 sys.path.insert(0, '/home/user/python-project-49/brain_games')
-from random import randint, choice
-
+from random import choice, randint
 
 DESCRIPTION = 'What is the result of the expression?'
+
 
 def create():
     operations = ['+', '-', '*']

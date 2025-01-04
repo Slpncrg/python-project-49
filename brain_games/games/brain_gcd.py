@@ -1,5 +1,5 @@
-from random import randint   
 import sys
+from random import randint
 
 sys.path.insert(0, '/home/user/python-project-49/brain_games')
 
@@ -20,14 +20,17 @@ def create():
             temp_num1 //= 2
             temp_num2 //= 2
             k *= 2
-        while temp_num1 % 2 == 0: temp_num1 //=2
-        while temp_num2 % 2 == 0: temp_num2 //=2
-        if temp_num1 >= temp_num2: temp_num1 -= temp_num2
-        else: temp_num2 -= temp_num1
+        while temp_num1 % 2 == 0: 
+            temp_num1 //= 2
+        while temp_num2 % 2 == 0: 
+            temp_num2 //= 2
+        if temp_num1 >= temp_num2: 
+            temp_num1 -= temp_num2
+        else: 
+            temp_num2 -= temp_num1
     correct = str(temp_num2 * k)
     
     return str(f"{num1} {num2}"), correct
-
 
 
 if __name__ == "__main__":
