@@ -1,12 +1,12 @@
 import sys
 
 sys.path.insert(0, '/home/user/python-project-49/brain_games')
-import brain_games_lib
+import brain_games_eng
 import games.brain_gcd as gcd
 
 
 def main():
-    brain_games_lib.start(gcd)
+    brain_games_eng.start(gcd)
 
 
 if __name__ == "__main__":
