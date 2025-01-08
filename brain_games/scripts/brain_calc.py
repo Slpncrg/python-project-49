@@ -1,12 +1,9 @@
-import sys
-
-sys.path.insert(0, '/home/user/python-project-49/brain_games')
-import brain_games_eng
-import games.brain_calc as calc
+import brain_games.games.brain_calc as calc
+from brain_games.brain_games_eng import start
 
 
 def main():
-    brain_games_eng.start(calc)
+    start(calc)
 
 
 if __name__ == "__main__":

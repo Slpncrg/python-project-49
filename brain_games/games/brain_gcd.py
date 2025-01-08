@@ -1,8 +1,4 @@
-import sys
 from random import randint
-
-sys.path.insert(0, '/home/user/python-project-49/brain_games')
-
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 

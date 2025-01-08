@@ -1,19 +1,19 @@
-import sys
-
-sys.path.insert(0, '/home/user/python-project-49/brain_games')
+from operator import add, mul, sub
 from random import choice, randint
 
 DESCRIPTION = 'What is the result of the expression?'
+OPERATIONS = {'+': add, 
+              '-': sub,
+              '*': mul
+            }
 
 
 def create():
-    operations = ['+', '-', '*']
     number1 = randint(0, 100)
     number2 = randint(0, 100)
-    operation = choice(operations)
-
-    question = f"{number1} {operation} {number2}"
-    correct = str(eval(question))
+    operation_key = choice(list(OPERATIONS.keys()))
+    question = f"{number1} {operation_key} {number2}"
+    correct = f"{OPERATIONS[operation_key](number1, number2)}"
     return question, correct
 
 

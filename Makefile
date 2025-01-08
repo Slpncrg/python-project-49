@@ -5,8 +5,7 @@ build:
 	uv build
 
 package-install:
-	uv tool install --reinstall hexlet_code
-	uv tool install dist/*.whl
+	uv tool install --reinstall dist/*.whl
 
 brain-games:
 	uv run brain-games
@@ -22,6 +21,9 @@ brain-gcd:
 
 brain-progression:
 	uv run brain-progression
+
+brain-prime:
+	uv run brain-prime
 
 make lint:
 	uv run ruff check brain_games

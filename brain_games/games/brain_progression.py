@@ -1,6 +1,3 @@
-import sys
-
-sys.path.insert(0, '/home/user/python-project-49/brain_games')
 from random import randint
 
 DESCRIPTION = 'What number is missing in the progression?'

@@ -1,7 +1,10 @@
 [project]
+authors = [
+    {name = "slpncrg"}
+]
 name = "hexlet-code"
 version = "0.1.0"
-description = "Add your description here"
+description = "First Hexlet's project"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -26,3 +29,4 @@ brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
+brain-prime = "brain_games.scripts.brain_prime:main"
