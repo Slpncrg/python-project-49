@@ -1,5 +1,7 @@
 from random import randint
 
+from brain_games.scripts.brain_games_eng import start
+
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
@@ -29,5 +31,5 @@ def create():
     return str(f"{num1} {num2}"), correct
 
 
-if __name__ == "__main__":
-	create()
+def main():
+    start(DESCRIPTION, create)

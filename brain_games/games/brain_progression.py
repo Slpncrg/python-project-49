@@ -1,5 +1,7 @@
 from random import randint
 
+from brain_games.scripts.brain_games_eng import start
+
 DESCRIPTION = 'What number is missing in the progression?'
 
 
@@ -21,5 +23,5 @@ def create():
     return questioin, correct
 
 
-if __name__ == "__main__":
-	create()
+def main():
+    start(DESCRIPTION, create)

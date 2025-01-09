@@ -1,6 +1,8 @@
 from math import sqrt
 from random import randint
 
+from brain_games.scripts.brain_games_eng import start
+
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
@@ -14,5 +16,5 @@ def create():
     return num, "yes"
 
 
-if __name__ == "__main__":
-	create()
+def main():
+    start(DESCRIPTION, create)

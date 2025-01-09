@@ -1,6 +1,8 @@
 from operator import add, mul, sub
 from random import choice, randint
 
+from brain_games.scripts.brain_games_eng import start
+
 DESCRIPTION = 'What is the result of the expression?'
 OPERATIONS = {'+': add, 
               '-': sub,
@@ -17,5 +19,5 @@ def create():
     return question, correct
 
 
-if __name__ == "__main__":
-	create()
+def main():
+	start(DESCRIPTION, create)

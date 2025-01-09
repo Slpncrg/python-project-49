@@ -1,5 +1,7 @@
 from random import randint
 
+from brain_games.scripts.brain_games_eng import start
+
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
@@ -9,5 +11,5 @@ def create():
     return question, correct
 
 
-if __name__ == "__main__":
-	create()
+def main():
+    start(DESCRIPTION, create)
